@@ -212,8 +212,11 @@ p.map(function (d) {
 
 ```
 
-# Compatibility
+## Compatibility
+
 [![browser support](https://ci.testling.com/adambom/parallel.js.png)](https://ci.testling.com/adambom/parallel.js)
+
+> Currently Parallel.js version one. This will be fixed shortly.
 
 ---
 
@@ -230,7 +233,5 @@ Contact anyone of the three of us if you wish to become an official contributor.
 If you wish to submit code, please fork the project, make your edits and create a pull request when ready.
 
 A full document dictating coding standards will be written shortly.
-
----
 
 ---
