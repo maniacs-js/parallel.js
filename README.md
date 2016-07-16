@@ -11,14 +11,14 @@ Parallel takes advantage of Web Workers for the web, and child processes for Nod
 
 # Installation
 
-You can download the raw javascript file [here](https://raw.github.com/adambom/parallel.js/master/lib/parallel.js)
+You can download the raw javascript file [here](https://raw.github.com/MaXwellFalstein/Parallel2.js/master/lib/parallel.js)
 
 Just include it via a script tag in your HTML page
 
 Parallel.js is also available as a node module:
 
 ```bash
-npm install paralleljs
+npm install parallel2js
 ```
 
 # Usage
@@ -75,6 +75,7 @@ p.spawn(function (data) {
 ---
 
 #### `map(fn)`
+
 Map will apply the supplied function to every element in the wrapped data. Parallel will spawn one worker for
 each array element in the data, or the supplied maxWorkers argument. The values returned will be stored for 
 further processing.
@@ -102,6 +103,7 @@ p.map(fib).then(log)
 ---
 
 #### `reduce(fn)`
+
 Reduce applies an operation to every member of the wrapped data, and returns a scalar value produced by the operation.
 Use it for combining the results of a map operation, by summing numbers for example. This takes a reducing function,
 which gets an argument, `data`, an array of the stored value, and the current element.
@@ -222,3 +224,13 @@ p.map(function (d) {
 [Amila Welihinda (amilajack)](https://github.com/amilajack)
 
 [Sebastian Mayr (Sebmaster)](https://github.com/Sebmaster)
+
+Contact anyone of the three of us if you wish to become an official contributor.
+
+If you wish to submit code, please fork the project, make your edits and create a pull request when ready.
+
+A full document dictating coding standards will be written shortly.
+
+---
+
+---
