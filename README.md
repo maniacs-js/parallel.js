@@ -1,14 +1,17 @@
-Parallel.js
-===========
+# Parallel2.js
+
+> Parallel2.js is the second generation of [Adombom's](https://github.com/adambom) [Parallel.js](https://github.com/adambom/parallel.js).
+
 
 ### Parallel Computing with Javascript
-*******
 
+---
 
 Parallel.js is a simple library for parallel computing in Javascript, either in Node.js or in the Web Browser.
 Parallel takes advantage of Web Workers for the web, and child processes for Node.
 
 # Installation
+
 You can download the raw javascript file [here](https://raw.github.com/adambom/parallel.js/master/lib/parallel.js)
 
 Just include it via a script tag in your HTML page
@@ -22,6 +25,7 @@ npm install paralleljs
 # Usage
 
 #### `Parallel(data, opts)`
+
 This is the constructor. Use it to new up any parallel jobs. The constructor takes an array of data you want to
 operate on. This data will be held in memory until you finish your job, and can be accessed via the `.data` attribute
 of your job.
@@ -43,7 +47,7 @@ var p = new Parallel([1, 2, 3, 4, 5]);
 console.log(p.data); // prints [1, 2, 3, 4, 5]
 ```
 
-*******
+---
 
 #### `spawn(fn)`
 This function will spawn a new process on a worker thread. Pass it the function you want to call. Your
@@ -69,7 +73,7 @@ p.spawn(function (data) {
 });
 ```
 
-*******
+---
 
 #### `map(fn)`
 Map will apply the supplied function to every element in the wrapped data. Parallel will spawn one worker for
@@ -96,7 +100,7 @@ p.map(fib).then(log)
 // Logs the first 7 Fibonnaci numbers, woot!
 ```
 
-*******
+---
 
 #### `reduce(fn)`
 Reduce applies an operation to every member of the wrapped data, and returns a scalar value produced by the operation.
@@ -120,9 +124,10 @@ p.require(factorial)
 p.map(function (n) { return Math.pow(10, n); }).reduce(add).then(log);
 ```
 
-*******
+---
 
 #### `then(success, fail)`
+
 The functions given to `then` are called after the last requested operation has finished.
 `success` receives the resulting data object, while `fail` will receive an error object.
 
@@ -144,9 +149,10 @@ p.map(dbl).map(dbl).map(dbl).then(function (data) {
 p.map(function (n) { return Math.pow(10, n) / factorial(n); }).reduce(add).then(log);
 ```
 
-*******
+---
 
 #### `require(state)`
+
 If you have state that you want to share between your main thread and the worker threads, this is how. Require
 takes either a string or a function. A string should point to a file name. Note that in order to
 use ```require``` with a file name as an argument, you have to provide the evalPath property in the options
@@ -169,6 +175,7 @@ p.map(function (d) {
 });
 ```
 #### Passing environement to functions
+
 You can pass data to threads that will be global to that worker. This data will be global in each called function.
 The data will be available under the `global.env` namespace. The namespace can be configured by passing the 
 `envNamespace` option to the `Parallel` constructor. The data you wish to pass should be provided as the `env` option
@@ -206,3 +213,13 @@ p.map(function (d) {
 
 # Compatibility
 [![browser support](https://ci.testling.com/adambom/parallel.js.png)](https://ci.testling.com/adambom/parallel.js)
+
+---
+
+# [Contributors](https://github.com/MaXwellFalstein/Parallel2.js/graphs/contributors)
+
+[MaXwellFalstein (MaX)](https://githubc.com/MaXwellFalstein)
+
+[Amila Welihinda (amilajack)](https://github.com/amilajack)
+
+[Sebastian Mayr (Sebmaster)](https://github.com/Sebmaster)
