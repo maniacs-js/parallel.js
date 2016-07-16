@@ -1,5 +1,10 @@
 # Parallel2.js
 
+[![Build Status](https://travis-ci.org/amilajack/Parallel2.js.svg?branch=master)](https://travis-ci.org/amilajack/Parallel2.js)
+[![Build status](https://ci.appveyor.com/api/projects/status/safnjk4fx8c3tr8f/branch/master?svg=true)](https://ci.appveyor.com/project/amilajack/parallel2-js/branch/master)
+[![NPM version](https://badge.fury.io/js/parallel2js.svg)](http://badge.fury.io/js/parallel2js)
+[![Dependency Status](https://img.shields.io/david/MaXwellFalstein/Parallel2.js.svg)](https://david-dm.org/MaXwellFalstein/Parallel2.js)
+
 ## Parallel Computing with Javascript
 
 > Parallel2.js is the second generation of Parallel.js, based on [Adombom's](https://github.com/adambom) [Parallel.js](https://github.com/adambom/parallel.js).
