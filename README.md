@@ -1,9 +1,8 @@
 # Parallel2.js
 
+## Parallel Computing with Javascript
+
 > Parallel2.js is the second generation of [Adombom's](https://github.com/adambom) [Parallel.js](https://github.com/adambom/parallel.js).
-
-
-### Parallel Computing with Javascript
 
 ---
 
