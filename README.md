@@ -236,7 +236,7 @@ p.map(function (d) {
 
 # [Contributors](https://github.com/MaXwellFalstein/Parallel2.js/graphs/contributors)
 
-[MaXwellFalstein (MaX)](https://github.com/MaXwellFalstein)
+[MaX Falstein (MaXwellFalstein)](https://github.com/MaXwellFalstein)
 
 [Amila Welihinda (amilajack)](https://github.com/amilajack)
 
