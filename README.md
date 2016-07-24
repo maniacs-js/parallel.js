@@ -4,6 +4,9 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/safnjk4fx8c3tr8f/branch/master?svg=true)](https://ci.appveyor.com/project/amilajack/parallel2-js/branch/master)
 [![NPM version](https://badge.fury.io/js/parallel2js.svg)](http://badge.fury.io/js/parallel2js)
 [![Dependency Status](https://img.shields.io/david/MaXwellFalstein/Parallel2.js.svg)](https://david-dm.org/MaXwellFalstein/Parallel2.js)
+[![first-timers-only](http://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](http://www.firsttimersonly.com/)
+
+> #### Parallel2.js now supports [first-timers-only](http://www.firsttimersonly.com/) for a [new branch](https://github.com/MaXwellFalstein/Parallel2.js/tree/first-timers-only/) in which first time coders will be able to add code for example uses of Parallel2.js.
 
 ## Parallel Computing with Javascript
 
